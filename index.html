@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hello, World! </title>
+    </head>
+    <style>
+        /* CSS styles */
+        body {
+            text-align: center;
+            padding-top: 150px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+    <body>
+        <h1 id="helloText"> Hello, World! </h1>
+        <button onclick="changeText()"> Change text </button>
+        <script>
+            // Javascript code
+            function changeText() {
+                var helloText = document.getElementById("helloText");
+                var newText = prompt("Enter a new text: ");
+                helloText.innerHTML = newText;
+            }
+        </script>
+    </body>
+</html>
